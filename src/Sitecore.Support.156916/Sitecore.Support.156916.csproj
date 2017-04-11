@@ -63,7 +63,6 @@
     <Compile Include="Shell\Applications\WebEdit\Dialogs\LockedItems\LockedItemsPage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Config\Include\zzz\Sitecore.Support.156916.config" />
     <Content Include="sitecore\shell\Override\LockedItems.xaml.xml" />
   </ItemGroup>
   <ItemGroup>
