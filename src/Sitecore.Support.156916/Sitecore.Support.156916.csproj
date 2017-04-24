@@ -48,6 +48,10 @@
       <HintPath>..\packages\SC.Sitecore.Client.8.1.3\lib\Sitecore.Client.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.ExperienceEditor, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Sitecore.ExperienceEditor.8.1.3\lib\Sitecore.ExperienceEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\packages\SC.Sitecore.Kernel.8.1.3\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
@@ -60,12 +64,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shell\Applications\WebEdit\Commands\UnlockAll.cs" />
     <Compile Include="Shell\Applications\WebEdit\Dialogs\LockedItems\LockedItemsPage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sitecore\shell\Override\LockedItems.xaml.xml" />
+    <Content Include="sitecore\shell\Override\LockedItems.xaml.xml">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\zzz\Sitecore.Support.156916.config" />
     <None Include="packages.config" />
     <None Include="web.config" />
   </ItemGroup>
