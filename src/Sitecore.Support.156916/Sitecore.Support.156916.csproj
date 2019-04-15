@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Sitecore.Support</RootNamespace>
     <AssemblyName>Sitecore.Support.156916</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -42,20 +42,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ComponentArt.Web.UI, Version=2010.1.2637.35, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.ComponentArt.Web.UI.9.0.2\lib\ComponentArt.Web.UI.dll</HintPath>
+    <Reference Include="ComponentArt.Web.UI">
+      <HintPath>..\packages\SC.ComponentArt.Web.UI.8.2.2\lib\ComponentArt.Web.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Client, Version=11.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.Sitecore.Client.9.0.2\lib\Sitecore.Client.dll</HintPath>
+    <Reference Include="Sitecore.Client">
+      <HintPath>..\packages\SC.Sitecore.Client.8.2.2\lib\Sitecore.Client.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.ExperienceEditor, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\SC.Sitecore.ExperienceEditor.9.0.2\lib\Sitecore.ExperienceEditor.dll</HintPath>
+    <Reference Include="Sitecore.ExperienceEditor">
+      <HintPath>..\packages\SC.Sitecore.ExperienceEditor.8.2.2\lib\Sitecore.ExperienceEditor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>..\packages\SC.Sitecore.Kernel.8.2.4\lib\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\packages\SC.Sitecore.Kernel.8.2.2\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
