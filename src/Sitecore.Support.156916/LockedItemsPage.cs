@@ -79,7 +79,8 @@ namespace Sitecore.Support.Shell.Applications.WebEdit.Dialogs.LockedItems
       {
         string[] unlockedItemIds = UnlockedItemIds;
         WebUtil.RemoveSessionValue("UnlockedItemIDs");
-        Item[] array = Client.ContentDatabase.SelectItems("search://*[@__lock='%\"" + Sitecore.Context.User.Name + "\"']") ?? new Item[0];
+        //Item[] array = Client.ContentDatabase.SelectItems("search://*[@__lock='%\"" + Sitecore.Context.User.Name + "\"']") ?? new Item[0];
+        Item[] array = Client.ContentDatabase.SelectItems("fast:/sitecore//*[@__lock='%" + Sitecore.Context.User.Name + "%']") ?? new Item[0];
         if (unlockedItemIds != null)
         {
           array = ((unlockedItemIds.Length == 0) ? new Item[0] : (from x in array
